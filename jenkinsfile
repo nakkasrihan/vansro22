@@ -5,9 +5,8 @@ PATH='${PATH}:/opt/maven/bin'
     stages {
         stage('CLONE') {
             steps {
-                https://github.com/nakkasrihan/vansro22.git
+                git branch: 'main', credentialsId: 'GITHUB-LOGIN', url: 'https://github.com/nakkasrihan/vansro22.git'
 		}
-
            }
 	stage('BUILD') {
             steps {
