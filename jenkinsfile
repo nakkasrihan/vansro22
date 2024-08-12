@@ -5,7 +5,7 @@ pipeline {
         stage('CLONE') {
             steps {
                 https://github.com/nakkasrihan/vansro22.git
-            }
+		}
         }
 	stage('BUILD') {
             steps {
