@@ -15,7 +15,7 @@ PATH='${PATH}:/opt/maven/bin'
         }
 	stage('DEPLOY") {
         	 steps {
-		       'sshagent (['Tomcat-login']) {
+		       'sshagent (['Tomcat-login'])' {
    		        sh "scp -o StrictHostKeyChecking=no target/vansro-1.0-SNAPSHOT.jar@13.234.19.10:/opt/tomcat9/webapps" 
    		        
 		    }
